@@ -34,14 +34,11 @@ body{
 header {
   padding: 0 1em;
   position: relative;
+  background-color: $beige; 
+  height: 7em;
+  padding-top: 1em;
 }
 
-.nav { 
-	background-color: $beige; 
-	height: 7em;
-	padding-top: 1em;
-	
-}
 
 .toggle-btn { 
 	position: absolute; 
@@ -93,7 +90,16 @@ header {
 
 .logo { 
 	width: 10%;
-	height: auto;
+	padding-left: 1em;
+	@media only screen and (min-width: 25em){ 
+	width: 25%;
+	}
+	@media only screen and (min-width: 38em){ 
+	width: 50%;
+	}
+	@media only screen and (min-width: 60em){ 
+		width: 35%;
+	}
 }
 
 /**
@@ -150,7 +156,6 @@ header {
 		}
 		li { 
 			list-style-type: none;
-			background-color: $blue; 
 			display: inline-block;
 			&:first-child a { 
 			border-top: none;
