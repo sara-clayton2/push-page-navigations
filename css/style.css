@@ -29,6 +29,10 @@ html {
   box-sizing: inherit;
 }
 
+.img-flex {
+  width: 100%;
+}
+
 body {
   font-family: sans-serif;
   margin: 0;
@@ -43,6 +47,11 @@ body.noscript .toggle-btn {
 header {
   padding: 0 1em;
   position: relative;
+}
+
+.nav {
+  background-color: #D1D3C1;
+  height: 4em;
 }
 
 .toggle-btn {
@@ -85,7 +94,6 @@ header {
   width: 40px;
   display: inline-block;
   padding: 13px 13px;
-  border: 1px solid #ccc;
 }
 
 .toggle-btn span,
@@ -137,4 +145,20 @@ header {
     padding: 0;
     min-height: 800px;
   }
+}
+
+@media only screen and (min-width: 60em) {
+  .toggle-btn,
+  .close-btn {
+    display: none;
+  }
+}
+
+body.noscript .navigation {
+  position: static;
+  right: auto;
+}
+
+.logo {
+  width: 10%;
 }
