@@ -52,16 +52,18 @@ header {
 	}
 	li { 
 		list-style: none;
+		background-color: $beige;
 		&:first-child a { 
-			border-top: 1px solid $light-grey;
+			border-top: 1px solid $white;
 		
 	}
 	a {
 		display: block;
 		text-align: center;
 		padding: .5em 1em;
-		border-bottom: 1px solid $light-grey; 
-		text-decoration: none; 	
+		border-bottom: 1px solid $white; 
+		text-decoration: none;
+		color: $white;
 	}
 	}
 

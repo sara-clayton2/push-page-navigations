@@ -64,18 +64,20 @@ header {
 
 .navigation li {
   list-style: none;
+  background-color: #D1D3C1;
 }
 
 .navigation li:first-child a {
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #fff;
 }
 
 .navigation li a {
   display: block;
   text-align: center;
   padding: .5em 1em;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #fff;
   text-decoration: none;
+  color: #fff;
 }
 
 .toggle-btn,
