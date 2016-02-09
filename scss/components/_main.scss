@@ -38,7 +38,9 @@ header {
 
 .nav { 
 	background-color: $beige; 
-	height: 4em;
+	height: 7em;
+	padding-top: 1em;
+	
 }
 
 .toggle-btn { 
@@ -89,6 +91,11 @@ header {
 	margin: 1em;
 }
 
+.logo { 
+	width: 10%;
+	height: auto;
+}
+
 /**
 * Sliding Navigation 
 */ 
@@ -133,14 +140,36 @@ header {
 	.close-btn{ 
 		display: none;
 	}
-
+	
+	.navigation{ 
+		padding-right: 5em;
+		ul{ 
+			padding-right: 1em;
+			float: right;
+			padding-top: 3em;
+		}
+		li { 
+			list-style-type: none;
+			background-color: $blue; 
+			display: inline-block;
+			&:first-child a { 
+			border-top: none;
+			}
+		a {
+			display: block;
+			text-align: center;
+			padding: .5em 1em;
+			border-bottom: none;
+			text-decoration: none;
+			color: $white;			
+			}
+		}
+	}
 }
+
 
 body.noscript .navigation{ 
 	position: static;
 	right: auto;
 }
 
-.logo { 
-	width: 10%;
-}
