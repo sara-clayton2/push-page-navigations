@@ -13,6 +13,7 @@ html {
 }
 
 
+
 *, *:before, *:after {
 	box-sizing: inherit;
 }
@@ -22,7 +23,8 @@ html {
 }
 
 body{
-  font-family: sans-serif;
+  font-family: 'Muli', sans-serif;
+	
   @include zero;
   // Hides close button if there is no js
   &.noscript .close-btn,
@@ -49,6 +51,7 @@ header {
 .navigation { 
 	ul { 
 		padding: 0;
+		text-transform: uppercase;
 	}
 	li { 
 		list-style: none;
@@ -64,6 +67,10 @@ header {
 		border-bottom: 1px solid $white; 
 		text-decoration: none;
 		color: $white;
+		&:hover { 
+			background-color: $dark-beige;
+		
+		}
 	}
 	}
 
@@ -71,7 +78,7 @@ header {
 
 .toggle-btn, 
 .close-btn { 
-	color: $text-color; 
+	color: $pink; 
 	text-decoration: none;
 	height: 40px; 
 	width: 40px;
@@ -91,10 +98,10 @@ header {
 }
 
 .logo { 
-	width: 10%;
+	width: 35%;
 	padding-left: 1em;
 	@media only screen and (min-width: 25em){ 
-	width: 25%;
+	width: 20%;
 	}
 	@media only screen and (min-width: 38em){ 
 	width: 50%;
@@ -150,7 +157,7 @@ header {
 	}
 	
 	.navigation{ 
-		padding-right: 5em;
+		padding-bottom: 3em;
 		ul{ 
 			padding-right: 35%;
 			padding-top: 3em;
@@ -165,13 +172,20 @@ header {
 		a {
 			display: block;
 			text-align: center;
-			padding: .5em 1em;
 			border-bottom: none;
 			text-decoration: none;
 			color: $white;			
 			}
 		}
 	}
+}
+
+.pig { 
+	padding-top:1em;
+	@media only screen and (min-width: 60em){ 
+		padding-top: 2em;
+	}
+	
 }
 
 
